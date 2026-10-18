@@ -59,23 +59,3 @@ A weekly Production, Sales and Inventory (PSI) planning project for **Prosacco**
 | Products | SKU list with category, warehouse and opening units. |
 | Production | Production plans for both scenarios. |
 | Source | Notes on data origin and method. |
-
----
-
-## Conclusion
-
-| Metric | Original | Delayed |
-|---|---|---|
-| Demand (units) | 109,994 | 109,994 |
-| Uncovered (units) | 0 | 2,283 |
-| Unit fill rate | 100% | 97.9% |
-| Exposed order value | $0 | $285,375 |
-| Week-52 closing stock (units) | 5,339 | 7,622 |
-
-- The **Original** plan covers all demand in every week.
-- The **Delayed** plan creates shortages only in **FP2020**, in weeks 41 and 42, because its production moves from weeks 40–41 to weeks 42–44.
-- The most exposed customers by value are **Customer2** (~$114K), **Customer5** (~$85K) and **Customer1** (~$71K).
-- Total production is identical in both plans, so the shortfall comes from **timing, not volume**.
-- Stock is uneven across SKUs: HB1016 ends with almost no cover, while OF1060 holds about 56 weeks.
-
-**Note:** Exposure is an estimate of order value at risk, not confirmed lost revenue. The model assumes production arrives before weekly demand and unmet demand is not carried forward.
